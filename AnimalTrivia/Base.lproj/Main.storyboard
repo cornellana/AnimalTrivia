@@ -54,13 +54,13 @@
                                 <animations/>
                                 <state key="normal" image="A"/>
                                 <connections>
-                                    <action selector="aButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTP-YY-hiB"/>
                                     <action selector="aButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Twk-tN-X3W"/>
                                 </connections>
                             </button>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mXW-cg-70K" userLabel="IncorrectAnswer">
                                 <rect key="frame" x="22" y="358" width="30" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-uy-WQn" userLabel="B">
                                 <rect key="frame" x="20" y="409" width="30" height="30"/>
@@ -73,6 +73,7 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HV-EG-XtE" userLabel="IncorrectAnswer">
                                 <rect key="frame" x="20" y="409" width="30" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sE-Jk-MTw" userLabel="C">
                                 <rect key="frame" x="20" y="467" width="30" height="30"/>
@@ -85,6 +86,7 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaC-98-wJm" userLabel="CorrectAnswer">
                                 <rect key="frame" x="20" y="467" width="30" height="30"/>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fW-km-Op1" userLabel="Next Button">
                                 <rect key="frame" x="20" y="517" width="342" height="63"/>
@@ -99,7 +101,6 @@
                         <outlet property="aButton" destination="8Ce-MH-yBe" id="keu-rN-Oaq"/>
                         <outlet property="aLabel" destination="vDb-7A-xZC" id="bZk-n2-6xO"/>
                         <outlet property="bButton" destination="P6k-uy-WQn" id="ZEj-pb-Q5C"/>
-                        <outlet property="bButtonPressed" destination="P6k-uy-WQn" id="qOD-8E-zfh"/>
                         <outlet property="bLabel" destination="4ft-5W-ItK" id="EQo-vU-zUo"/>
                         <outlet property="cButton" destination="7sE-Jk-MTw" id="19i-mK-kSz"/>
                         <outlet property="cLabel" destination="pHg-k2-rz4" id="ztH-sA-Crg"/>

@@ -33,10 +33,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func aButtonPressed(sender: AnyObject) {
+        incorrectAImageView.hidden = false
     }
     @IBAction func bButtonPressed(sender: AnyObject) {
+        incorrectBImageView.hidden = false
     }
     @IBAction func cButtonPressed(sender: AnyObject) {
+        correctCImageView.hidden = false
     }
 
     
