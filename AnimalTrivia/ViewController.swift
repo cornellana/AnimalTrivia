@@ -8,8 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    
+    let segundos : NSTimeInterval = 3
+    var myTimer: NSTimer? = nil
+    
     @IBOutlet weak var aLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
     @IBOutlet weak var cLabel: UILabel!
@@ -34,18 +39,21 @@ class ViewController: UIViewController {
 
     @IBAction func aButtonPressed(sender: AnyObject) {
         incorrectAImageView.hidden = false
+       sleep(4)
+       incorrectAImageView.hidden = true
     }
     @IBAction func bButtonPressed(sender: AnyObject) {
         incorrectBImageView.hidden = false
+        sleep(2)
+        incorrectBImageView.hidden = true
+
     }
     @IBAction func cButtonPressed(sender: AnyObject) {
         correctCImageView.hidden = false
+        sleep(4)
+        correctCImageView.hidden = true
     }
 
-    
-    
-    
-    
     
 
 }
