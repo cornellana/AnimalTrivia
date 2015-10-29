@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import AVFoundation
+import SpriteKit
 
 
 class ViewController: UIViewController {
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     var timer = NSTimer()
     var queButton = " "
     let segundos = 3.0
+    var ding:AVAudioPlayer = AVAudioPlayer()
+    
 
     
     @IBOutlet weak var aLabel: UILabel!
@@ -41,11 +44,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func aButtonPressed(sender: AnyObject) {
+        
+
+        playSound("typewriter-key-1")
+        
         incorrectAImageView.hidden = false
         queButton = "A"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
     }
     @IBAction func bButtonPressed(sender: AnyObject) {
+        
+ 
         incorrectBImageView.hidden = false
         queButton = "B"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
@@ -63,7 +72,25 @@ class ViewController: UIViewController {
             case "C":correctCImageView.hidden = true
             default:()
         }
+    }
+    
+    func playSound(soundName: String)
+    {
+        //let origen = (NSBundle.mainBundle().resourcePath! as NSString).stringByAppendingPathComponent(soundName + ".mp3")
         
+        let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let origin = dirPaths[0] + "/" + soundName + ".mp3"
+        let coinSound = NSURL(fileURLWithPath: origin)
+        
+        
+        //let coinSound = NSURL(fileURLWithPath: NSBundle.mainBundle().resourcePath(soundName, ofType: "mp3")!)
+        do{
+            let audioPlayer = try AVAudioPlayer(contentsOfURL:coinSound)
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        }catch {
+            print("Error getting the audio file")
+        }
     }
 
 }

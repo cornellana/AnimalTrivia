@@ -14,6 +14,7 @@
 		98EE03581BE119FC003E7736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EE03561BE119FC003E7736 /* LaunchScreen.storyboard */; };
 		98EE03631BE119FC003E7736 /* AnimalTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE03621BE119FC003E7736 /* AnimalTriviaTests.swift */; };
 		98EE036E1BE119FC003E7736 /* AnimalTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE036D1BE119FC003E7736 /* AnimalTriviaUITests.swift */; };
+		98FE02BD1BE29A9F00B34E97 /* typewriter-key-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		98EE034D1BE119FC003E7736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98EE034F1BE119FC003E7736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98EE03521BE119FC003E7736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98EE03541BE119FC003E7736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98EE03541BE119FC003E7736 /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Assets.xcassets; sourceTree = "<group>"; };
 		98EE03571BE119FC003E7736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98EE03591BE119FC003E7736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98EE035E1BE119FC003E7736 /* AnimalTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +48,7 @@
 		98EE03691BE119FC003E7736 /* AnimalTriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EE036D1BE119FC003E7736 /* AnimalTriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTriviaUITests.swift; sourceTree = "<group>"; };
 		98EE036F1BE119FC003E7736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "typewriter-key-1.mp3"; path = "../../../../../../Downloads/typewriter-key-1.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				98EE034D1BE119FC003E7736 /* AppDelegate.swift */,
 				98EE034F1BE119FC003E7736 /* ViewController.swift */,
+				98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */,
 				98EE03511BE119FC003E7736 /* Main.storyboard */,
 				98EE03541BE119FC003E7736 /* Assets.xcassets */,
 				98EE03561BE119FC003E7736 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					98EE03491BE119FC003E7736 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = TJ6V4QM3GB;
 					};
 					98EE035D1BE119FC003E7736 = {
 						CreatedOnToolsVersion = 7.1;
@@ -230,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98EE03581BE119FC003E7736 /* LaunchScreen.storyboard in Resources */,
+				98FE02BD1BE29A9F00B34E97 /* typewriter-key-1.mp3 in Resources */,
 				98EE03551BE119FC003E7736 /* Assets.xcassets in Resources */,
 				98EE03531BE119FC003E7736 /* Main.storyboard in Resources */,
 			);
@@ -399,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimalTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cat.cornellana.AnimalTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimalTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cat.cornellana.AnimalTrivia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -484,6 +495,7 @@
 				98EE03741BE119FC003E7736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98EE03751BE119FC003E7736 /* Build configuration list for PBXNativeTarget "AnimalTriviaTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +504,7 @@
 				98EE03771BE119FC003E7736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98EE03781BE119FC003E7736 /* Build configuration list for PBXNativeTarget "AnimalTriviaUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				98EE037A1BE119FC003E7736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
