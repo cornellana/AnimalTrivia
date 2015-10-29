@@ -12,8 +12,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let segundos : NSTimeInterval = 3
-    var myTimer: NSTimer? = nil
+
+    var timer = NSTimer()
+    var queButton = " "
+    let segundos = 3.0
+
     
     @IBOutlet weak var aLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
@@ -39,22 +42,29 @@ class ViewController: UIViewController {
 
     @IBAction func aButtonPressed(sender: AnyObject) {
         incorrectAImageView.hidden = false
-       sleep(4)
-       incorrectAImageView.hidden = true
+        queButton = "A"
+        timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
     }
     @IBAction func bButtonPressed(sender: AnyObject) {
         incorrectBImageView.hidden = false
-        sleep(2)
-        incorrectBImageView.hidden = true
+        queButton = "B"
+        timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
 
     }
     @IBAction func cButtonPressed(sender: AnyObject) {
         correctCImageView.hidden = false
-        sleep(4)
-        correctCImageView.hidden = true
-    }
+        queButton = "C"
+        timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)    }
 
-    
+    func update() {
+        switch queButton {
+            case "A":incorrectAImageView.hidden = true
+            case "B":incorrectBImageView.hidden = true
+            case "C":correctCImageView.hidden = true
+            default:()
+        }
+        
+    }
 
 }
 
