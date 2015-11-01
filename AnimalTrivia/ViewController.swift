@@ -49,6 +49,8 @@ class ViewController: UIViewController {
         
         incorrectAImageView.hidden = false
         aLabel.textColor = UIColor.redColor()
+        bButton.enabled = false
+        cButton.enabled = false
         queButton = "A"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
     }
@@ -56,6 +58,8 @@ class ViewController: UIViewController {
         
  
         incorrectBImageView.hidden = false
+        aButton.enabled = false
+        cButton.enabled = false
         bLabel.textColor = UIColor.redColor()
         queButton = "B"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
@@ -63,6 +67,8 @@ class ViewController: UIViewController {
     }
     @IBAction func cButtonPressed(sender: AnyObject) {
         correctCImageView.hidden = false
+        bButton.enabled = false
+        aButton.enabled = false
         cLabel.textColor = UIColor.greenColor()
         queButton = "C"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)    }
@@ -71,14 +77,20 @@ class ViewController: UIViewController {
         switch queButton {
         case "A":
                     incorrectAImageView.hidden = true
+                    bButton.enabled = true
+                    cButton.enabled = true
                     aLabel.textColor = UIColor.blackColor()
             
             case "B":
                     incorrectBImageView.hidden = true
+                    aButton.enabled = true
+                    cButton.enabled = true
                     bLabel.textColor = UIColor.blackColor()
             
             case "C":
                     correctCImageView.hidden = true
+                    bButton.enabled = true
+                    aButton.enabled = true
                     cLabel.textColor = UIColor.blackColor()
             
             default:()
