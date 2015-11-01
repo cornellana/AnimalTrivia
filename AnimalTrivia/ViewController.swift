@@ -16,10 +16,8 @@ class ViewController: UIViewController {
 
     var timer = NSTimer()
     var queButton = " "
-    let segundos = 3.0
-    var ding:AVAudioPlayer = AVAudioPlayer()
-    
-
+    let segundos = 1.0
+    var audioPlayer:AVAudioPlayer = AVAudioPlayer()
     
     @IBOutlet weak var aLabel: UILabel!
     @IBOutlet weak var bLabel: UILabel!
@@ -48,7 +46,9 @@ class ViewController: UIViewController {
 
         playSound("typewriter-key-1")
         
+        
         incorrectAImageView.hidden = false
+        aLabel.textColor = UIColor.redColor()
         queButton = "A"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
     }
@@ -56,20 +56,31 @@ class ViewController: UIViewController {
         
  
         incorrectBImageView.hidden = false
+        bLabel.textColor = UIColor.redColor()
         queButton = "B"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
 
     }
     @IBAction func cButtonPressed(sender: AnyObject) {
         correctCImageView.hidden = false
+        cLabel.textColor = UIColor.greenColor()
         queButton = "C"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)    }
 
     func update() {
         switch queButton {
-            case "A":incorrectAImageView.hidden = true
-            case "B":incorrectBImageView.hidden = true
-            case "C":correctCImageView.hidden = true
+        case "A":
+                    incorrectAImageView.hidden = true
+                    aLabel.textColor = UIColor.blackColor()
+            
+            case "B":
+                    incorrectBImageView.hidden = true
+                    bLabel.textColor = UIColor.blackColor()
+            
+            case "C":
+                    correctCImageView.hidden = true
+                    cLabel.textColor = UIColor.blackColor()
+            
             default:()
         }
     }
@@ -81,7 +92,6 @@ class ViewController: UIViewController {
         let dirPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let origin = dirPaths[0] + "/" + soundName + ".mp3"
         let coinSound = NSURL(fileURLWithPath: origin)
-        
         
         //let coinSound = NSURL(fileURLWithPath: NSBundle.mainBundle().resourcePath(soundName, ofType: "mp3")!)
         do{

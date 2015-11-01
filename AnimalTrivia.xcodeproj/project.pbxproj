@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98B623751BE6452E001F6E35 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B623741BE6452E001F6E35 /* Media.xcassets */; };
 		98EE034E1BE119FC003E7736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE034D1BE119FC003E7736 /* AppDelegate.swift */; };
 		98EE03501BE119FC003E7736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE034F1BE119FC003E7736 /* ViewController.swift */; };
 		98EE03531BE119FC003E7736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EE03511BE119FC003E7736 /* Main.storyboard */; };
-		98EE03551BE119FC003E7736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98EE03541BE119FC003E7736 /* Assets.xcassets */; };
 		98EE03581BE119FC003E7736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98EE03561BE119FC003E7736 /* LaunchScreen.storyboard */; };
 		98EE03631BE119FC003E7736 /* AnimalTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE03621BE119FC003E7736 /* AnimalTriviaTests.swift */; };
 		98EE036E1BE119FC003E7736 /* AnimalTriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EE036D1BE119FC003E7736 /* AnimalTriviaUITests.swift */; };
-		98FE02BD1BE29A9F00B34E97 /* typewriter-key-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98B623741BE6452E001F6E35 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		98EE034A1BE119FC003E7736 /* AnimalTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EE034D1BE119FC003E7736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98EE034F1BE119FC003E7736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98EE03521BE119FC003E7736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		98EE03541BE119FC003E7736 /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Assets.xcassets; sourceTree = "<group>"; };
 		98EE03571BE119FC003E7736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98EE03591BE119FC003E7736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98EE035E1BE119FC003E7736 /* AnimalTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +47,6 @@
 		98EE03691BE119FC003E7736 /* AnimalTriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalTriviaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EE036D1BE119FC003E7736 /* AnimalTriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTriviaUITests.swift; sourceTree = "<group>"; };
 		98EE036F1BE119FC003E7736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "typewriter-key-1.mp3"; path = "../../../../../../Downloads/typewriter-key-1.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +97,10 @@
 		98EE034C1BE119FC003E7736 /* AnimalTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				98B623741BE6452E001F6E35 /* Media.xcassets */,
 				98EE034D1BE119FC003E7736 /* AppDelegate.swift */,
 				98EE034F1BE119FC003E7736 /* ViewController.swift */,
-				98FE02BC1BE29A9F00B34E97 /* typewriter-key-1.mp3 */,
 				98EE03511BE119FC003E7736 /* Main.storyboard */,
-				98EE03541BE119FC003E7736 /* Assets.xcassets */,
 				98EE03561BE119FC003E7736 /* LaunchScreen.storyboard */,
 				98EE03591BE119FC003E7736 /* Info.plist */,
 			);
@@ -234,8 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98EE03581BE119FC003E7736 /* LaunchScreen.storyboard in Resources */,
-				98FE02BD1BE29A9F00B34E97 /* typewriter-key-1.mp3 in Resources */,
-				98EE03551BE119FC003E7736 /* Assets.xcassets in Resources */,
+				98B623751BE6452E001F6E35 /* Media.xcassets in Resources */,
 				98EE03531BE119FC003E7736 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
