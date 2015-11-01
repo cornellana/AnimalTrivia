@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     var timer = NSTimer()
     var queButton = " "
-    let segundos = 1.0
+    let segundos = 2.0
     var audioPlayer:AVAudioPlayer = AVAudioPlayer()
     
     @IBOutlet weak var aLabel: UILabel!
@@ -48,7 +48,8 @@ class ViewController: UIViewController {
         
         
         incorrectAImageView.hidden = false
-        aLabel.textColor = UIColor.redColor()
+        //aLabel.textColor = UIColor.redColor()
+        aLabel.textColor = UIColor(red: 251/255, green: 100/255, blue: 104/255, alpha: 1)
         bButton.enabled = false
         cButton.enabled = false
         queButton = "A"
@@ -61,6 +62,7 @@ class ViewController: UIViewController {
         aButton.enabled = false
         cButton.enabled = false
         bLabel.textColor = UIColor.redColor()
+        bLabel.textColor = UIColor(hue: 358/360, saturation: 60/100, brightness: 98/100, alpha: 1.0)
         queButton = "B"
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
 
