@@ -56,8 +56,6 @@ class ViewController: UIViewController {
         timer = NSTimer.scheduledTimerWithTimeInterval(segundos, target: self,selector: "update", userInfo: nil, repeats: false)
     }
     @IBAction func bButtonPressed(sender: AnyObject) {
-        
- 
         incorrectBImageView.hidden = false
         aButton.enabled = false
         cButton.enabled = false
